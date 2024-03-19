@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Profile</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <h2>My Life as an Evsunista!</h2>
+
+    
+    
+    <nav role="navigation">
+        <div id="menuToggle">
+            <input type="checkbox" />
+            <span></span>
+            <span></span>
+            <span></span>
+
+            <div class="visitor-counter">
+                <i class="fas fa-eye"></i>
+                <span id="visitor-number">0</span> visitors
+                <script>
+                    function updateCounter() {
+                        var counter = document.getElementById("counter");
+                        counter.innerHTML = parseInt(counter.innerHTML) + 1;
+                    }
+                    setInterval(updateCounter, 60000); // update counter every minute
+                </script>
+            </div>
+
+            <ul id="menu">
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contactus.html">ContactUs</a></li>
+                <li><a href="https://erikterwan.com/" target="_blank">Show me more</a></li>
+            </ul>
+        </div>
+    </nav>
+</body>
+</html>
